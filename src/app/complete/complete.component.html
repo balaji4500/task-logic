@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div >
+    <table>
+        <tr>
+            <th>Task completed</th>
+        </tr>
+    </table>
+        <tr *ngFor="let item of list">
+            <td *ngIf="item.completed===true">
+            {{item.title}} <i class="bi bi-check-circle-fill" id="done"></i>
+            </td>
+        </tr>
+    </div>
+</body>
+</html>

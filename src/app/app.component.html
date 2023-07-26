@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Default page</title>
+</head>
+<body>
+  <mat-drawer-container class="example-container" autosize id="side">
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <p><button id="btn">Add a new Task</button></p>
+      <p> <a routerLink="/task"><i class="bi bi-envelope-fill"></i><b>My Task</b></a>  </p>
+      <p> <a routerLink="/important"><i class="bi bi-star"></i><b>Important</b></a></p>
+      <p><a routerLink="/complete"><i class="bi bi-check-circle-fill"></i><b>Completed</b></a></p>
+      <p> <a routerLink="/delete"><i class="bi bi-trash"></i><b>Deleted</b></a></p><br><br>
+      <p><i class="bi bi-circle-fill"id='i1'></i><b>High</b></p>
+      <p><i class="bi bi-circle-fill" id="i2"></i><b>Medium</b></p>
+      <p><i class="bi bi-circle-fill" id="i3"></i><b>Low</b></p>
+      <p><i class="bi bi-circle-fill" id="i4"></i><b>Blocked</b></p>
+      <p><i class="bi bi-circle-fill" id="i5"></i><b>Update</b></p>
+    </mat-drawer>
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        <i class="bi bi-backspace-fill" id="back"></i>        
+      </button>
+   
+    </div>
+  
+  </mat-drawer-container>
+</body>
+<router-outlet></router-outlet>
+</html>

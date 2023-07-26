@@ -1,0 +1,28 @@
+body{
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 300px;
+    width: 1200px;
+
+}
+
+table,td,tr{
+    padding: 20px;
+    margin-left: 200px;
+    margin-top: -200px;
+    box-shadow: 2px 2px 2px 2px #b9b9b9;
+}
+th{
+    font-size: 25px;
+}
+td{
+    font-size: 20px;
+}
+#done{
+    color: rgb(15, 199, 15);
+    size: 20px;
+}
+div{
+    margin-left: 100px;
+    margin-top: 70px;
+}

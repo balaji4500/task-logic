@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>important</title>
+</head>
+<body>
+    <div >
+    <table>
+        <tr>
+            <th>Important task</th>
+        </tr>
+        <tr *ngFor="let item of importantdetails">
+            <td *ngIf="item.starred===true">
+            {{item.title}} <i class="bi bi-star-fill" id="done"></i>
+            </td>
+        </tr>
+    </table>
+
+    </div>
+</body>
+</html>
